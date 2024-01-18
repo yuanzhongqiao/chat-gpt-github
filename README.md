@@ -1,35 +1,53 @@
-# ChatGPT Github
-
-This is a template for creating a **ChatGPT-powered QA Github Repository** thanks to [Embedbase](https://embedbase.xyz) and [OpenAI](https://openai.com).
-
-
-## How it works
-
-* we index `Python, JS, TS, MD` files with [Embedbase](https://github.com/another-ai/embedbase)
-* when you search, we use semantic search with [Embedbase](https://github.com/another-ai/embedbase) to find the most relevant snippets
-* we then ask GPT-3 to give a summary of the snippets
-
-![ezgif com-crop (1)](https://user-images.githubusercontent.com/25003283/221257024-782d29c8-7168-401d-8f1e-a3461107cdae.gif)
-
-![ezgif com-video-to-gif (3)](https://user-images.githubusercontent.com/25003283/221257924-845c0edc-7702-4784-9e0a-7e9764050be0.gif)
-
-![ezgif com-video-to-gif (2)](https://user-images.githubusercontent.com/25003283/221257938-66b8c909-60be-4d13-8487-10f285adfdf9.gif)
-
-
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fanother-ai%2Fchat-gpt-github&env=EMBEDBASE_API_KEY,OPENAI_API_KEY&envDescription=Get%20your%20API%20key%20on%20Embedbase%20website%20at%20https%3A%2F%2Fapp.embedbase.xyz%20and%20your%20OpenAI%20key%20at%20https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys)
-
-Remember to add `EMBEDBASE_API_KEY` to your [repository secrets](https://docs.github.com/en/rest/actions/secrets) to automatically sync your documentation to [Embedbase](https://embedbase.xyz) on push.
-
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><h1 tabindex="-1" dir="auto"><a id="user-content-chatgpt-github" class="anchor" aria-hidden="true" tabindex="-1" href="#chatgpt-github"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ChatGPT Github</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是一个借助</font><a href="https://embedbase.xyz" rel="nofollow"><font style="vertical-align: inherit;">Embedbase</font></a><font style="vertical-align: inherit;">和</font><a href="https://openai.com" rel="nofollow"><font style="vertical-align: inherit;">OpenAI</font></a><font style="vertical-align: inherit;">创建</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ChatGPT 支持的 QA Github 存储库</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的模板。</font></font><a href="https://embedbase.xyz" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://openai.com" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-how-it-works" class="anchor" aria-hidden="true" tabindex="-1" href="#how-it-works"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">怎么运行的</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们使用</font><a href="https://github.com/another-ai/embedbase"><font style="vertical-align: inherit;">Embedbase</font></a></font><code>Python, JS, TS, MD</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">索引文件</font></font><a href="https://github.com/another-ai/embedbase"><font style="vertical-align: inherit;"></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当您搜索时，我们使用</font></font><a href="https://github.com/another-ai/embedbase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Embedbase</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进行语义搜索来查找最相关的片段</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后我们要求 GPT-3 给出片段摘要</font></font></li>
+</ul>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/25003283/221257024-782d29c8-7168-401d-8f1e-a3461107cdae.gif" data-target="animated-image.originalLink"><img src="https://user-images.githubusercontent.com/25003283/221257024-782d29c8-7168-401d-8f1e-a3461107cdae.gif" alt="ezgif com 裁剪 (1)" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://user-images.githubusercontent.com/25003283/221257024-782d29c8-7168-401d-8f1e-a3461107cdae.gif" target="_blank">
+          
+ </p>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/25003283/221257924-845c0edc-7702-4784-9e0a-7e9764050be0.gif" data-target="animated-image.originalLink"><img src="https://user-images.githubusercontent.com/25003283/221257924-845c0edc-7702-4784-9e0a-7e9764050be0.gif" alt="ezgif com 视频转 gif (3)" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://user-images.githubusercontent.com/25003283/221257924-845c0edc-7702-4784-9e0a-7e9764050be0.gif" target="_blank">
+          
+        <span data-target="animated-image.imageContainer">
+            <img data-target="animated-image.replacedImage" alt="ezgif com-video-to-gif (3)" class="AnimatedImagePlayer-animatedImage" src="https://user-images.githubusercontent.com/25003283/221257924-845c0edc-7702-4784-9e0a-7e9764050be0.gif" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="800" height="500"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="Play ezgif com-video-to-gif (3)" hidden=""></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="Play ezgif com-video-to-gif (3)">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="Open ezgif com-video-to-gif (3) in new window" class="AnimatedImagePlayer-button" href="https://user-images.githubusercontent.com/25003283/221257924-845c0edc-7702-4784-9e0a-7e9764050be0.gif" target="_blank">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<p dir="auto"><animated-image data-catalyst=""><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/25003283/221257938-66b8c909-60be-4d13-8487-10f285adfdf9.gif" data-target="animated-image.originalLink"><img src="https://user-images.githubusercontent.com/25003283/221257938-66b8c909-60be-4d13-8487-10f285adfdf9.gif" alt="ezgif com 视频转 gif (2)" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://user-images.githubusercontent.com/25003283/221257938-66b8c909-60be-4d13-8487-10f285adfdf9.gif" target="_blank">
+          
+        
+<h2 tabindex="-1" dir="auto"><a id="user-content-quick-start" class="anchor" aria-hidden="true" tabindex="-1" href="#quick-start"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击按钮克隆此存储库并将其部署到 Vercel 上：</font></font></p>
+<p dir="auto"><a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fanother-ai%2Fchat-gpt-github&amp;env=EMBEDBASE_API_KEY,OPENAI_API_KEY&amp;envDescription=Get%20your%20API%20key%20on%20Embedbase%20website%20at%20https%3A%2F%2Fapp.embedbase.xyz%20and%20your%20OpenAI%20key%20at%20https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys" rel="nofollow"><img src="https://camo.githubusercontent.com/0d115430c1db17132964386282927e5e313543c7d868fc06bc9a7c65d7ec974e/68747470733a2f2f76657263656c2e636f6d2f627574746f6e" alt="使用 Vercel 进行部署" data-canonical-src="https://vercel.com/button" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请记住添加</font></font><code>EMBEDBASE_API_KEY</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">到您的</font></font><a href="https://docs.github.com/en/rest/actions/secrets"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库机密</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，以便在推送时自动将您的文档同步到</font></font><a href="https://embedbase.xyz" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Embedbase</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-local-development" class="anchor" aria-hidden="true" tabindex="-1" href="#local-development"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地发展</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先，运行</font></font><code>pnpm i</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装依赖项。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后，运行</font></font><code>pnpm dev</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动开发服务器并访问localhost:3000。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-license" class="anchor" aria-hidden="true" tabindex="-1" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目已获得 MIT 许可证的许可。</font></font></p>
+</article></div>
